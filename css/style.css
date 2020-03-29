@@ -47,31 +47,117 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-.header{
-    width: 100%;
-    max-width: 1366px;
-    margin: auto;
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, a, span{
+    font-family: 'Lato', sans-serif;
 }
 
-.center{
-    max-width: 1030px;
-    width: 90%;
+/* барьер */
+header {
+    height: 100vh;
+    max-height: 817px;
+    background-image: url('../images/pig.png');
+    background-size: cover;
+}
+.center {
+    width: 86%;
     margin: 0 auto;
+}
+header .center .first_text {
+    position: relative;
     display: flex;
+    padding-top: 55px;
+    padding-bottom: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .center .first_text p{
+    color: #feffff;
+    font-size: 18px;
+}
+header .center .first_text ul li {
+    display: block;
+    margin-top: 5px;
+}
+header .center .menu {
+    display: none;
+}
+header .center .menu1 {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 58px;
+    right: 60px;
+}
+header .center .first_text .menu li {
+    display: block;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: right;
+    margin: 0;
+}
+header .center .burger {
+    cursor: pointer;
+}
+header .center .first_text ul li i {
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #feffff;
+    border-radius: 3px;
+    
+}
+header .center h1 {
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+header .center a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+header .center a span{
+    margin-left: 5px;
+    font-size: 25px;
 }
 
-.header img{
-    width: 100%;
-    height: 820px;
+header .center a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+header .center .down {
+    margin-top: 150px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: center;
+}
+header .center .down a{
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: center;
+}
+header .center .down a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+header .center .down i{
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .container2{
     height: 890px;
     width: 100%;
     font-family: 'Lato', sans-serif;
+}
+
+.container2 .center{
+    width: 90%;
+    max-width: 1040px;
 }
 
 .container2 .center .man1{
@@ -193,12 +279,12 @@ table {
     background-repeat: no-repeat;
 	background-size: cover;
     position: relative;
- 
+    width: 100%;
 }
 
 .container3 .center3{
     justify-content: space-between;
-   
+    display: flex;
 }
 
 .container3 .center .text_con3{
@@ -231,7 +317,7 @@ table {
 
 .container4 .shapka{
     display: flex;
-    margin: 140px 100px 105px 100px;
+    margin: 140px auto 105px auto;
     max-width: 1166px;
     width: 90%;
     justify-content: space-between;
@@ -261,21 +347,21 @@ table {
 }
 
 .container4 .picter{
-    display: grid;
-    grid-template-columns: 273px 273px 273px 273px;
-    grid-template-rows: 238px 238px;
-    grid-column-gap: 28px;
-    grid-row-gap: 15px;
-    justify-items: center;
-    margin: 0 95px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6.95%;
+    max-width: 90%;
+    width: 1166px;
+    
 }
 
 .container4 .picter .pict{
     background-color: #f6f6ee;
-    width: 100%;
+    width: 23.84%;
+    height: 238px;
     position: relative;
     z-index: 10;
+    margin-bottom: 15px;
 }
 
 .container4 .picter img{
@@ -300,7 +386,7 @@ table {
     z-index: 11;
 }
 
-.container4 .end_text{
+.container4 .mak .end_text{
     position: absolute;
     margin-right: 100px;
     margin-top: 80px;
@@ -311,7 +397,7 @@ table {
     text-decoration: none;
 }
 
-.container4 .end_text span{
+.container4 .mak .end_text span{
     font-size: 25px;
     margin-left: 20px;
 }
@@ -328,19 +414,25 @@ table {
     opacity: 0;
 }
 
-.container4 .picter .pict .fonpict h4{
+.container4 .picter .pict h4{
     font-size: 18px;
     margin: 100px 10% 10px 10%;
     color: #ffffff;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
 
-.container4 .picter .pict .fonpict a{
+.container4 .picter .pict a{
     font-size: 12px;
     color: #ffffff;
     z-index: 1;
     position: relative;
+    margin-left: 30%;
+}
+
+.container4 .picter .pict a span{
+    margin-left: 2px;
 }
 
 .container4 .picter .pict:hover .fonpict{
@@ -350,11 +442,11 @@ table {
     0 0 10px 10px ;
 }
 
-.container4 .picter .pict:hover .fonpict h4{
+.container4 .picter .pict:hover h4{
     z-index: 100;
 }
 
-.container4 .picter .pict:hover .fonpict a{
+.container4 .picter .pict:hover a{
     z-index: 100;
     text-decoration: none;
 }
@@ -368,7 +460,8 @@ table {
 }
 
 .container5 .atlet .item{
-    width: 1030px;
+    max-width: 1030px;
+    width: 90%;
     height: 100%;
     margin: 100px auto 10px auto;
     display: flex;
@@ -427,7 +520,8 @@ table {
 
 .container6 .center_con6{
     display: flex;
-    width: 1166px;
+    width: 90%;
+    max-width: 1166px;
     margin: 145px auto 0 auto;
 }
 
@@ -613,7 +707,7 @@ table {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin-left: 120px;
+    margin-left: 32%;
 }
 
 .container6 .center_con6 .colonka .pat4 .icon2 i{
@@ -728,7 +822,7 @@ table {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin-left: 120px;
+    margin-left: 32%;
 }
 
 .container6 .center_con6 .colonka .pat5 .icon2 i{
@@ -830,7 +924,7 @@ table {
 }
 
 .footer .center_fot .bottom_div .fot4{
-    width: 600px;
+    width: 57.7%;
     margin-right: 120px;
 }
 
@@ -838,47 +932,143 @@ table {
     background-color: #171515;
     border: 0;
     border-bottom: 2px solid #515050;
-    width: 600px;
+    width: 100%;
     color: #ffffff;
 }
 
 .footer .center_fot .bottom_div .fot4 p{
     color: #ffffff;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
+    font-size: 14px;
 }
 
-.footer .center_fot .bottom_div .fot4 h5{
-    text-align: right;
+.footer .center_fot .bottom_div .fot4 a{
+    float: right;
     color: #ffffff;
     font-size: 16px;
     margin-top: 35px;
+    
 }
 
-.footer .center_fot .bottom_div .fot4 h5 span{
+.footer .center_fot .bottom_div .fot4 a span{
     font-size: 25px;
     margin-left: 8px;
 }
 
 .footer .center_fot .bottom_div .fot5{
-    width: 315px;
+    width: 30.3%;
 }
 
 .footer .center_fot .bottom_div .fot5 input{
     background-color: #171515;
     border: 0;
     border-bottom: 2px solid #515050;
-    width: 315px;
+    width: 100%;
     color: #ffffff;
 }
 
 .footer .center_fot .bottom_div .fot5 p{
     text-align: left;
     color: #ffffff;
-    font-size: 16px;
-    margin-top: 35px;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-left: 35px;
+}
+
+.footer .center_fot .bottom_div .fot5 .p2 {
+    margin-top: 30px;
 }
 
 .footer hr{
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f1ebeb46;
+    margin-top: 70px;
+    height: 0px;
+}
+
+.footer .center_fot .end_text{
+    display: flex;
+    justify-content: space-between;
+    color: #898989;
+}
+
+.footer .center_fot .end_text .icons{
+    display: flex;
+}
+
+.footer .center_fot .end_text .icons a i{
+    margin: 0 15px;
+    color: #898989;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    header .down {
+        margin-top: 120px;
+
+    }
+}
+@media (max-width: 1050px) {
+    header .scroll {
+        display: none;
+    }
+@media(max-width: 1170px){
+    .container6 .center_con6 .colonka .pat5 .icon2{
+        margin-left: 22%;
+    }
+    .container6 .center_con6 .colonka .pat4 .icon2{
+        margin-left: 22%;
+    }
+    .container4 .picter .fon_img1 .pict1{
+        margin: 37px 60px;
+    }
+}
+
+
+@media(max-width: 1050px){
+    .container6 .center_con6 .colonka .pat2 p{
+        font-size: 13px;
+    }
+    .container2 .center .man1{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .container6 .center_con6 .colonka .pat5 .icon2{
+        margin-left: 15%;
+    }
+    .container6 .center_con6 .colonka .pat4 .icon2{
+        margin-left: 15%;
+    }
+}
+
+@media(max-width: 922px){
+    .container6 .center_con6{
+        flex-direction: column;
+    }
+    .container6 .center_con6 .colonka{
+        margin-top: 30px;
+        width: 60%;
+        margin-left: 18%;
+        margin-right: auto;
+    }
+    .container4 .picter{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container4 .picter .pict{
+        width: 50%;
+    }
+}
+
+@media(max-width: 877px){
+    
 }
