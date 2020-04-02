@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,11 +65,17 @@ header {
 }
 header .center .first_text {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 55px;
     padding-bottom: 130px;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header .center .first_text p{
     color: #feffff;
@@ -160,6 +168,8 @@ header .center .down i{
 }
 
 .container2 .center .man1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 140px;
 }
@@ -183,8 +193,12 @@ header .center .down i{
 }
 
 .container2 .center .man1 .aboutme .icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container2 .center .man1 .aboutme .icons i{
@@ -237,6 +251,8 @@ header .center .down i{
 
 
 .container2 .center .options{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 105px;
     font-family: 'Lato', sans-serif;
@@ -288,7 +304,11 @@ header .center .down i{
 }
 
 .container3 .center3{
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -321,11 +341,15 @@ header .center .down i{
 
 
 .container4 .shapka{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 140px auto 105px auto;
     max-width: 1166px;
     width: 90%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .container4 .shapka h2{
@@ -336,8 +360,12 @@ header .center .down i{
 
 .container4 .shapka .menu{
     color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .container4 .shapka .menu li{
@@ -352,12 +380,17 @@ header .center .down i{
 }
 
 .container4 .picter{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     max-width: 90%;
     width: 1166px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .container4 .picter .pict{
@@ -374,7 +407,8 @@ header .center .down i{
     height: 100%;
     z-index: 11;
     position: absolute;
-    object-fit: none;
+    -o-object-fit: none;
+       object-fit: none;
 }
 
 .container4 .picter .pict .img .pict1{
@@ -433,7 +467,9 @@ header .center .down i{
 .container4 .picter .pict:hover .fonpict{
     display: block;
     z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.4) 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 
+    0 0 10px 10px ;
+            box-shadow: rgba(0, 0, 0, 0.4) 
     0 0 10px 10px ;
 }
 
@@ -450,6 +486,8 @@ header .center .down i{
     width: 90%;
     height: 100%;
     margin: 100px auto 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'Lato', sans-serif;
 }
@@ -505,12 +543,17 @@ header .center .down i{
 }
 
 .container6 .center_con6{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;
     max-width: 1166px;
     margin: 145px auto 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .container6 .center_con6 .colonka .happy .time a{
@@ -556,13 +599,20 @@ header .center .down i{
 }
 
 .container6 .center_con6 .colonka:hover{
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .container6 .center_con6 .pat2 .happy .time{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 100%;
 }
 
@@ -588,6 +638,8 @@ header .center .down i{
 }
 
 .container6 .center_con6 .pat2 .happy .like, .container6 .center_con6 .pat3 .happy .like{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -597,9 +649,14 @@ header .center .down i{
 }
 
 .container6 .center_con6 .pat3 .happy{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 15px;
     width: 90%;
 }
@@ -609,16 +666,25 @@ header .center .down i{
 }
 
 .container6 .center_con6 .pat2 .happy{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 15px auto;
     max-width: 85%;
 }
 
 .container6 .center_con6 .pat2 .happy .like{
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .container6 .center_con6 .colonka .foto{
@@ -677,6 +743,8 @@ header .center .down i{
 }
 
 .footer .center_fot .top_div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 100px;
 }
@@ -717,6 +785,8 @@ header .center .down i{
 
 .footer .center_fot .bottom_div{
     margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -783,12 +853,18 @@ header .center .down i{
 }
 
 .footer .center_fot .end_text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #898989;
 }
 
 .footer .center_fot .end_text .icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -974,16 +1050,26 @@ header .center .down i{
         margin-left: 70%;
     }
     .container2 .center .man1 .aboutme .icons{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .container2 .center .options{
         margin-top: 45px;
     }
     .container2 .center .man1{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         margin-top: 40px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .container2 .center .man1 .fotos{
         margin-bottom: 50px;
@@ -1012,8 +1098,13 @@ header .center .down i{
 
 @media (max-width: 608px){
     .footer .center_fot .top_div{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .footer .center_fot .top_div .fot1{
         width: 90%;
@@ -1069,8 +1160,13 @@ header .center .down i{
     }
     .container4 .shapka{
         margin-bottom: 20px;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .container6 .center_con6 .colonka{
         margin: 10px auto;
@@ -1145,7 +1241,8 @@ header .center .down i{
         margin-right: 0;
     }
     .container3 .center3{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .container3 .center .text_con3{
         width: 49%;
@@ -1184,8 +1281,13 @@ header .center .down i{
         font-size: 16px;
     }
     .container5 .atlet .item{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .container5{
         height: 500px;
@@ -1207,22 +1309,34 @@ header .center .down i{
     }
     .footer .center_fot .top_div{
         text-align: center;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .footer .center_fot .bottom_div{
         text-align: center;
-        flex-direction: column-reverse;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .footer .center_fot .bottom_div .fot4 p{
         margin-top: 15px;
     }
     .footer .center_fot .end_text{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .footer{
-        height: 840px;
+        height: 800px;
     }
     .footer .center_fot .bottom_div .fot5, .footer .center_fot .bottom_div .fot4{
         width: 75%;
@@ -1238,12 +1352,16 @@ header .center .down i{
     }
     .footer .center_fot .end_text p{
         font-size: 14px;
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 380px){
     .container2 .center .options{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .container2{
         height: 1400px;
@@ -1258,8 +1376,13 @@ header .center .down i{
         height: 2360px;
     }
     .container4 .shapka .menu{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .container4 .shapka .menu li a{
         font-size: 20px;
